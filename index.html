@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidadania Digital: Deepfakes e Desinformação</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Cidadania Digital & IA</h1>
+            <button id="theme-toggle" aria-label="Alternar modo de contraste">Alternar Modo</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">O que é?</a></li>
+                <li><a href="#identificar">Como Detectar</a></li>
+                <li><a href="#quiz-section">Desafio Blindado</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre" class="card">
+            <h2>O Impacto das Deepfakes</h2>
+            <p>As <strong>deepfakes</strong> são mídias sintéticas geradas por inteligência artificial avançada que conseguem replicar rostos, vozes e trejeitos com precisão assustadora. Quando usadas de forma maliciosa, automatizam a criação de notícias falsas (fake news), destruindo reputações e manipulando a opinião pública de maneira massiva.</p>
+        </section>
+
+        <section id="identificar" class="card">
+            <h2>Guia de Sobrevivência Digital</h2>
+            <p>Fique atento a pequenas falhas que os algoritmos de IA ainda cometem ao tentar replicar a realidade:</p>
+            <ul class="dicas-lista">
+                <li><strong>Padrão de Piscada:</strong> Olhos que não piscam de forma natural ou não acompanham o movimento do rosto.</li>
+                <li><strong>Sincronia Labial:</strong> Atrasos sutis entre o som das palavras faladas e o movimento dos lábios.</li>
+                <li><strong>Iluminação Inconsistente:</strong> Sombras estranhas no contorno das orelhas, nariz ou dentes desalinhados com a luz ambiente.</li>
+            </ul>
+        </section>
+
+        <section id="quiz-section" class="card">
+            <h2>Quiz: Você consegue detectar a mentira?</h2>
+            <p>Responda às questões para testar seus escudos contra mídias manipuladas por IA.</p>
+            
+            <form id="quiz-form">
+                <div class="questao">
+                    <p>1. Se um vídeo de uma figura pública possui boa resolução e áudio limpo, podemos cravar que ele é 100% autêntico?</p>
+                    <label><input type="radio" name="q1" value="falso" required> Sim, IAs só geram vídeos borrados.</label>
+                    <label><input type="radio" name="q1" value="verdadeiro"> Não, softwares atuais criam cópias perfeitas em alta definição.</label>
+                </div>
+
+                <div class="questao">
+                    <p>2. Qual é a melhor atitude ao receber um áudio alarmante de um familiar clonado por IA?</p>
+                    <label><input type="radio" name="q2" value="verdadeiro" required> Entrar em contato por outro canal seguro para confirmar o fato.</label>
+                    <label><input type="radio" name="q2" value="falso"> Compartilhar imediatamente em grupos de alerta da escola.</label>
+                </div>
+
+                <button type="submit" id="submit-btn">Verificar Respostas</button>
+            </form>
+
+            <div id="resultado-container" class="hidden">
+                <p id="resultado-texto"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Portal de Conscientização Escolar. Conteúdo autoral focado em Ética Digital.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
